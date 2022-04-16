@@ -1,5 +1,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+ const isPal = word.split("").reverse().join("")
+ if(isPal.toLowerCase() === word.toLowerCase()){
+  return true
+ }else{
+   return false
+ }
+ 
+
 }
 
 /* 
@@ -23,3 +32,6 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
+console.log(isPalindrome('dad'));
