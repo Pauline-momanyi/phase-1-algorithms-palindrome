@@ -2,11 +2,7 @@ function isPalindrome(word) {
   // Write your algorithm here
 
  const isPal = word.split("").reverse().join("")
- if(isPal.toLowerCase() === word.toLowerCase()){
-  return true
- }else{
-   return false
- }
+ return isPal.toLowerCase() === word.toLowerCase()
  
 
 }
